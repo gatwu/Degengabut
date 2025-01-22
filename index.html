@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degen Trading Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Degen Trading Game</h1>
+    <div class="wallet">Saldo: <span id="balance">1000</span> Degen</div>
+    <div id="chart"></div>
+    <div class="controls">
+        <button onclick="placeOrder('buy')">BUY Degen</button>
+        <button onclick="placeOrder('sell')">SELL Degen</button>
+    </div>
+    <h2>Posisi Terbuka</h2>
+    <ul id="positions"></ul>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
